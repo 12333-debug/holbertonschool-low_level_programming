@@ -1,6 +1,3 @@
-#include "main.h"
-
-/* Exemple de contenu de base */
 #ifndef MAIN_H
 #define MAIN_H
 
