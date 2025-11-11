@@ -1,0 +1,43 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * print_grid - prints a 2D grid
+ * @grid: the grid to print
+ * @width: number of columns
+ * @height: number of rows
+ */
+void print_grid(int **grid, int width, int height)
+{
+	int i, j;
+
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+		{
+			printf("%d ", grid[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	int **grid;
+
+	grid = alloc_grid(6, 4);
+	if (grid == NULL)
+	{
+		printf("failed to allocate\n");
+		return (1);
+	}
+	print_grid(grid, 6, 4);
+	free_grid(grid, 4);
+	return (0);
+}
