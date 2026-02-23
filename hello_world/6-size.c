@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-	printf("Size of a char: %u\n",sizeof(char));
-	printf("Size of a char: %u\n",sizeof(int));
-	printf("Size of a char: %lu\n",sizeof(int));
+	printf("Size of a char: %zu\n",sizeof(char));
 	printf("Size of a char: %zu\n",sizeof(int));
-	printf("Size of a char: %f\n",sizeof(float));
+	printf("Size of a char: %zu\n",sizeof(int));
+	printf("Size of a char: %zu\n",sizeof(int));
+	printf("Size of a char: %zu\n",sizeof(float));
 
 	return (0);
 }
