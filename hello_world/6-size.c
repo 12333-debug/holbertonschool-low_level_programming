@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Write a C program
+ * main - Entry point
  *
  * Return : always 0
  */
