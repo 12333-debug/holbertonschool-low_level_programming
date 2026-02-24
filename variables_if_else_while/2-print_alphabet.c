@@ -4,17 +4,16 @@
  * main - Entry  point
  *
  * Return: always 0
-*/
+ */
 
 int main(void)
 {
-int c = 97;
+	int c = 97;
 
-while
-(c < 122);
-
-putchar(97);
-c++;
-putchar('\n');
-
+	while (c < 123)
+	{
+		putchar(c);
+		c++;
+	}
+		putchar('\n');
 }
