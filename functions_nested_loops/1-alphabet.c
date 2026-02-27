@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * main - Entry point
@@ -16,5 +15,5 @@ _putchar(c);
 c++;
 
 }
-putchar('\n');
+_putchar('\n');
 }
