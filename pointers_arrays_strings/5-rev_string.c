@@ -2,16 +2,22 @@
 
 void rev_string(char *s)
 {
-    int i = 0;
+    char *j = s;
+    char tmp;
 
-    while (s[i] != '\0')
+    while (*s)
     {
-        i++;
+        s++;
     }
-    while (i>=0)
+        s--;
+    while (s>j)
     {
-        _putchar(s[i]);
-        i--;
-    }
-    _putchar('\n');
+        
+        tmp = *s;
+        *s = *j;
+        *j = tmp;
+
+    j++;
+    s--;
+    }    
 }
