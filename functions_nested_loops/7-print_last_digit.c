@@ -1,20 +1,23 @@
 #include "main.h"
-#include "stdio.h"
+
 /**
- *
- *
- *
- *
- */
+* print_last_digit - prints the last digit
+* @n: The int to test
+* Return: 1 and prints '+' if n is positive and 0 if n == 0,
+* -1 and prints '-' if n is negative
+*/
 
-int  print_last_digit(int i)
+int print_last_digit(int n)
 {
-int last = i % 10;
+	int last_digit;
 
-if (last < 0)
-last = -last;
+	last_digit = n % 10;
 
-_putchar(last + '0');
+	if (last_digit < 0)
+	{
+		last_digit = last_digit * (-1);
+	}
 
-return last;
-} 
+	_putchar(last_digit + '0');
+	return (last_digit);
+}
