@@ -1,20 +1,27 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
 /**
- * main - Entry  point
+ * main - Entry point
  *
- * Return: always 0
- */
-
+ * Return: Always 0 (Sucess)
+*/
 int main(void)
 {
-	int c = 97;
+	int c;
 
-	while (c < 123)
+	c = 97;
+
+	while (c <= 122)
 	{
-		putchar(c);
-			c++;
-}
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
+		c++;
+	}
+
 	putchar('\n');
+
 	return (0);
 }

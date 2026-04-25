@@ -1,31 +1,30 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
 /**
- * main - Entry  point
+ * main - Entry point
  *
- * Return: always 0
- */
-
+ * Return: Always 0 (Sucess)
+*/
 int main(void)
 {
-	int c = 48;
 
-	while (c < 58)
+	/* Expected Output Result 0, 1, 2, 3, 4, 5, 6, 7, 8, 9*/
+	int n;
+
+	n = '0';
+
+	while (n <= '9')
 	{
-		putchar(c);
-			c++;
-	}
- 	while (c < 58)
-    {
-        putchar( );
-            c++;
-	}
-	 while (c < 58)
-    {
-        putchar(c);
-            c++;
+		putchar(n);
+		if (n < '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		n++;
 	}
 	putchar('\n');
+
 	return (0);
-	
 }
